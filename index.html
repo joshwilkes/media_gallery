@@ -4,17 +4,170 @@
         <meta charset="utf-8">
         <title>Media Gallery</title>
         <link rel="stylesheet" href="style.css" />
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans|Source+Sans+Pro" rel="stylesheet"> 
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     </head>
     <body id="page">
+        <header>
+            <h1>Media Gallery</h1>
+        </header>
         <div class="slideshow-container">
             <div class="slide fade"> 
                 <div class="slide-number">1 of 4</div>
-                <img src="/pics/slide1.jpg" />
-                <div class="caption">Caption</div>
+                <img src="https://unsplash.it/600/200?image=1053" />
+                <div class="caption">High Tide</div>
             </div>
+            <div class="slide fade"> 
+                <div class="slide-number">2 of 4</div>
+                <img src="https://unsplash.it/600/200?image=1052" />
+                <div class="caption">Ocean Waves</div>
+            </div>
+            <div class="slide fade"> 
+                <div class="slide-number">2 of 4</div>
+                <img src="https://unsplash.it/600/200?image=1051" />
+                <div class="caption">Calm Lake</div>
+            </div>
+            <div class="slide fade"> 
+                <div class="slide-number">2 of 4</div>
+                <img src="https://burst.shopifycdn.com/photos/country-road-cyclist_4460x4460.jpg" sizes="400px" />
+                <div class="caption">Foggy Mountain Creek</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></a>
+            <a class="next" onclick="plusSlides(1)"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+        </div>
+        <div class="text-center">
+            <span class="indicator" onclick="currentSlide(1)"></span>
+            <span class="indicator" onclick="currentSlide(2)"></span>
+            <span class="indicator" onclick="currentSlide(3)"></span>
+            <span class="indicator" onclick="currentSlide(4)"></span>
         </div>
         <div class="grid-container">
             <!--grid content-->
+            <div class="card">
+                <div class="video">
+                    <video controls>
+                        <source src="pics/Josh_Backflip.mp4" type="video/mp4">
+                    </video>
+                    <p id="video-title">Josh Wilkes Backflipping</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image random1"></div>
+                <div class="card-content">
+                    <h2>Yoda Pug</h2>
+                    <p class="card-text">A pug swaddled in a blanket, making him look like Yoda.</p>
+                    <button class="card-btn" ><a href="https://unsplash.com/photos/2Ts5HnA67k8"><i class="fa fa-arrow-right" aria-hidden="true"></i></a></button>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="card-image random2"></div>
+                <div class="card-content">
+                    <h2>Fresh Field</h2>
+                    <p class="card-text">A freshly mowed field. Anyone want to play some soccer?</p>
+                    <button class="card-btn"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image random3"></div>
+                <div class="card-content">
+                    <h2>Castle</h2>
+                    <p class="card-text">That's a pretty neat looking castle.</p>
+                    <button class="card-btn"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image random4"></div>
+                <div class="card-content">
+                    <h2>Mama Bear</h2>
+                    <p class="card-text">I wouldn't get too close to those cubs if I were you.</p>
+                    <button class="card-btn"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image random5"></div>
+                <div class="card-content">
+                    <h2>Fancy Food</h2>
+                    <p class="card-text">Take an instagram before it gets too cold.</p>
+                    <button class="card-btn"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image random6"></div>
+                <div class="card-content">
+                    <h2>Scenic Reflection</h2>
+                    <p class="card-text">Is that a mirror or a pond? What a view.</p>
+                    <button class="card-btn"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image random7"></div>
+                <div class="card-content">
+                    <h2>Mushrooms</h2>
+                    <p class="card-text">I wouldn't eat those if I were you. They might be poisnous.</p>
+                    <button class="card-btn"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image random8"></div>
+                <div class="card-content">
+                    <h2>Foggy Bridge</h2>
+                    <p class="card-text">I would not want to drive across in that weather.</p>
+                    <button class="card-btn"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image random9"></div>
+                <div class="card-content">
+                    <h2>Mountain</h2>
+                    <p class="card-text">That's a steep mountain. It almost looks like an arrow head</p>
+                    <button class="card-btn"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image random10"></div>
+                <div class="card-content">
+                    <h2>High Tide</h2>
+                    <p class="card-text">High Tide Bro! Go grab your surfboard.</p>
+                    <button class="card-btn"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image random11"></div>
+                <div class="card-content">
+                    <h2>Waterfall</h2>
+                    <p class="card-text">Don't get too close, you might get wet.</p>
+                    <button class="card-btn"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image random12"></div>
+                <div class="card-content">
+                    <h2>Camouflaged Frog</h2>
+                    <p class="card-text">If you look closely, you can see a frog hiding in the water.</p>
+                    <button class="card-btn"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image random13"></div>
+                <div class="card-content">
+                    <h2>Double Rainbow</h2>
+                    <p class="card-text">The waterfall is giving off the effect of a double rainbow.</p>
+                    <button class="card-btn"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image random14"></div>
+                <div class="card-content">
+                    <h2>Cross Mountain</h2>
+                    <p class="card-text">On top of the snowy mountain lies a cross.</p>
+                    <button class="card-btn"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                </div>
+            </div>
         </div>
+        <footer>
+            <p>&copy 2017, Josh Wilkes</p>
+        </footer>
+        <script src="slideshow.js" type="text/javascript"></script>
     </body>
 </html>
