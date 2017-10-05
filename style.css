@@ -52,7 +52,9 @@ header {
 .slide-number {
     position: absolute;
     font-size: 12px;
-    top: 0;
+    top: 5px;
+    left: 5px;
+    color: white;
 }
 
 
@@ -130,7 +132,15 @@ header {
     background: #A06776;
     border: 1px solid #dadada;
     border-radius: 25px;
+}
+
+.card p, .card h2 {
+    position: relative;
     text-align: center;
+}
+
+.card-text {
+    padding-bottom: 1em;
 }
 
 .card:hover  {
@@ -161,6 +171,13 @@ video {
     border-radius: 50%;
     border: none;
     padding: .3em .6em .4em .6em;
+    background-color: white;
+    margin-top: 5px;
+    color: black;
+}
+
+.card-btn:clicked {
+    color: black;
 }
 
 .card-btn:hover {
