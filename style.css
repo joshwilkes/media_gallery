@@ -130,13 +130,13 @@ header {
 .card {
     position: relative;
     background: #A06776;
-    border: 1px solid #dadada;
     border-radius: 25px;
 }
 
 .card p, .card h2 {
     position: relative;
     text-align: center;
+    color: #e8dcd5;
 }
 
 .card-text {
@@ -144,7 +144,7 @@ header {
 }
 
 .card:hover  {
-  box-shadow: 4px 4px  2.5px lightgrey;
+  box-shadow: 4px 4px  2.5px #4f5256;
 }
 
 .card-image {
@@ -171,9 +171,9 @@ video {
     border-radius: 50%;
     border: none;
     padding: .3em .6em .4em .6em;
-    background-color: white;
+    background-color: #603d46;
     margin-top: 5px;
-    color: black;
+    color: #e8dcd5;
 }
 
 .card-btn:clicked {
@@ -182,8 +182,8 @@ video {
 
 .card-btn:hover {
     box-shadow: 1px 1px 2px rgba(0,0,0,0.4);
-    background-color: black;
-    color: white;
+    background-color: #e8dcd5;
+    color: #603d46;
 }
 
 footer {
